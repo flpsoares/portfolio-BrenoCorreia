@@ -6,6 +6,21 @@ export default createGlobalStyle`
     padding: 0;
     outline: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF;
+  }
+
+  body {
+    background: var(--dark);
+  }
+
+  a {
+    color: #FFFFFF;
+    text-decoration: none
+  }
+
+  ul {
+    list-style: none;
   }
   
   button, input {
@@ -15,5 +30,10 @@ export default createGlobalStyle`
   
   button {
     cursor: pointer;
+  }
+
+  :root {
+    --primary: #F4704C;
+    --dark: #222222;
   }
 `
