@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "date": "2021",
+    "team": "vasco",
+    "isActive": true
+  },
+  {
+    "id": "2",
+    "date": "2020",
+    "team": "palmeiras",
+    "isActive": false
+  },
+  {
+    "id": "3",
+    "date": "2019",
+    "team": "galaxy",
+    "isActive": false
+  },
+  {
+    "id": "4",
+    "date": "2018",
+    "team": "escudos",
+    "isActive": false
+  },
+  {
+    "id": "5",
+    "date": "2017",
+    "team": "vasco",
+    "isActive": false
+  },
+  {
+    "id": "6",
+    "date": "2016",
+    "team": "vasco",
+    "isActive": false
+  }
+]
