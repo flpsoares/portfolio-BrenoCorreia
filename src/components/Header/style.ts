@@ -17,8 +17,8 @@ export const Menu = styled.nav`
   ul {
     display: flex;
     gap: 50px;
-    margin-right: 160px;
-    font-size: 14px;
+    margin-right: 130px;
+    font-size: 12px;
   }
 `
 

@@ -7,16 +7,16 @@ export const Header: React.FC = () => {
       <Menu>
         <ul>
           <Item>
-            <a href="#">História</a>
+            <a href="#">HISTÓRIA</a>
           </Item>
           <Item>
-            <a href="#">Títulos</a>
+            <a href="#">TÍTULOS</a>
           </Item>
           <Item>
-            <a href="#">Galeria</a>
+            <a href="#">GALERIA</a>
           </Item>
           <Item>
-            <a href="#">Contato</a>
+            <a href="#">CONTATO</a>
           </Item>
         </ul>
       </Menu>
