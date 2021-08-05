@@ -5,6 +5,8 @@ export const Container = styled.div`
 
   overflow: hidden;
 
+  box-shadow: 0px -25px 50px 16px var(--dark);
+
   .bola {
     position: absolute;
     opacity: 4%;

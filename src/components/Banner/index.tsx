@@ -1,10 +1,11 @@
 import { Header } from '../Header'
-import { Container, Content, ContentWrapper } from './style'
+import { Background, Container, Content, ContentWrapper } from './style'
 
 import { BiPlayCircle } from 'react-icons/bi'
 export const Banner: React.FC = () => {
   return (
     <Container>
+      <Background />
       <Header />
       <Content>
         <img src="/assets/quadro.png" alt="quadro" />

@@ -4,9 +4,26 @@ export const Container = styled.div`
   width: 100%;
   height: 650px;
 
-  padding: 0 300px;
+  position: relative;
 
-  border: 1px solid var(--primary);
+  padding: 0 300px;
+`
+
+export const Background = styled.div`
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+
+  z-index: -1;
+
+  background-image: url('/assets/banner-campo.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 -280px;
+  filter: brightness(0.3);
 `
 
 export const Content = styled.div`
