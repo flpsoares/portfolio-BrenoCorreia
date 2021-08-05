@@ -36,4 +36,36 @@ export default createGlobalStyle`
     --primary: #F4704C;
     --dark: #222222;
   }
+
+  .rec-dot {
+    display: none;
+  }
+
+  .rec.rec-arrow {
+    background: #333333 !important;
+
+    position: absolute;
+    top: 10px;
+    right: 60px;
+    
+    width: 23px;
+    height: 19px;
+
+    border-radius: 0;
+
+    font-size: 18px;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .rec.rec-arrow-left {
+    right: 120px;
+  }
+
+  .rec.rec-arrow:hover, .rec.rec-arrow-left:hover {
+    filter: brightness(0.8);
+  }
 `
