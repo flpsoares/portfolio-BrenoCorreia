@@ -60,22 +60,38 @@ export const Gifs = styled.div`
 export const Gif = styled.div`
   position: relative;
 
+  &:hover .thumb {
+    display: none;
+  }
+
   .thumbnail2,
   .thumbnail3 {
     width: 427px;
     height: 244px;
     object-fit: cover;
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
   }
 
   .thumbnail4 {
     width: 308px;
     height: 525px;
     object-fit: cover;
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
   }
 `
 
 export const ButtonPlay = styled.button<ButtonProps>`
   position: absolute;
+
+  z-index: 2;
 
   left: ${(props) => (props.isPrimary ? '50%' : '90%')};
   bottom: ${(props) => (props.isPrimary ? '40%' : '10px')};
