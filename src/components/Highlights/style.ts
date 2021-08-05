@@ -1,5 +1,9 @@
 import styled from 'styled-components'
 
+interface ButtonProps {
+  isPrimary?: boolean
+}
+
 export const Container = styled.div`
   height: 720px;
 
@@ -36,7 +40,7 @@ export const Title = styled.h1`
 
 export const Gifs = styled.div`
   display: flex;
-  gap: 40px;
+  gap: 24px;
 
   .gif1,
   .gif4 {
@@ -50,6 +54,49 @@ export const Gifs = styled.div`
     width: 427px;
     height: 244px;
     object-fit: cover;
+  }
+`
+
+export const Gif = styled.div`
+  position: relative;
+
+  .thumbnail2,
+  .thumbnail3 {
+    width: 427px;
+    height: 244px;
+    object-fit: cover;
+  }
+
+  .thumbnail4 {
+    width: 308px;
+    height: 525px;
+    object-fit: cover;
+  }
+`
+
+export const ButtonPlay = styled.button<ButtonProps>`
+  position: absolute;
+
+  left: ${(props) => (props.isPrimary ? '50%' : '90%')};
+  bottom: ${(props) => (props.isPrimary ? '40%' : '10px')};
+
+  transform: translateX(-50%) translateY(-50%);
+
+  width: ${(props) => (props.isPrimary ? '71px' : '35px')};
+  height: ${(props) => (props.isPrimary ? '71px' : '35px')};
+
+  background: ${(props) =>
+    props.isPrimary ? 'var(--primary)' : 'rgba(0, 0, 0, 0.6)'};
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: background 0.1s;
+
+  &:hover {
+    background: var(--primary);
   }
 `
 
