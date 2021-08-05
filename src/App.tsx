@@ -1,6 +1,7 @@
 import { Achievements } from './components/Achievements'
 import { Banner } from './components/Banner'
 import { Biography } from './components/Biography'
+import { Highlights } from './components/Highlights'
 import { Container } from './styles/app'
 
 export const App: React.FC = () => {
@@ -9,6 +10,7 @@ export const App: React.FC = () => {
       <Banner />
       <Biography />
       <Achievements />
+      <Highlights />
     </Container>
   )
 }
