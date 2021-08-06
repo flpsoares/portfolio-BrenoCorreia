@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Container = styled.div`
   position: relative;
 
-  overflow: hidden;
+  overflow-y: hidden;
 
   box-shadow: 0px -25px 50px 16px var(--dark);
 
@@ -12,6 +12,18 @@ export const Container = styled.div`
     opacity: 4%;
     top: -120px;
     right: 0;
+  }
+`
+
+export const Wrapper = styled.div`
+  padding: 100px 320px;
+
+  display: flex;
+
+  @media screen and (max-width: 1400px) {
+    display: flex;
+    justify-content: center;
+    text-align: center;
   }
 `
 
@@ -24,14 +36,17 @@ export const KnowMoreButton = styled.button`
   font-weight: 500;
   font-size: 14px;
 
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+
   .icon {
     fill: #a0a0a0;
   }
 `
 
 export const Info = styled.div`
-  margin: 100px 0 0 300px;
-
   width: 640px;
 
   h1 {
