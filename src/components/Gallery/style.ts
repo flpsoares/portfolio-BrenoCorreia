@@ -1,68 +1,102 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  height: 1000px;
-  overflow-x: scroll;
-`
+  min-width: 100%;
+  overflow-y: hidden;
+  overflow-x: auto;
 
-export const Title = styled.h1`
-  font-weight: 700;
-  font-size: 75px;
-  color: #a0a0a0;
-  line-height: 66px;
-  text-align: center;
-
-  padding: 80px 0;
+  h1 {
+    font-weight: 700;
+    font-size: 75px;
+    color: #a0a0a0;
+    text-align: center;
+    padding: 58px 0;
+  }
 `
 
 export const Wrapper = styled.div`
   display: flex;
-  justify-content: center;
-  height: 100%;
-  gap: 16px;
+  gap: 20px;
 
-  min-width: 2000px;
+  padding: 0 58px;
 
-  margin-bottom: 50px;
-
-  padding: 0 14px;
+  margin-bottom: 58px;
+  overflow-x: scroll;
 
   img {
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
   }
+`
 
-  .twoDiagonalSpaces {
-    grid-column: span 2;
-  }
+export const DoubleColumn = styled.div`
+  min-width: 380px;
+  max-width: 380px;
+  height: 760px;
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
 
-  .twoVerticalSpaces {
-    grid-row: span 2;
-  }
-
-  .fourSpaces {
-    grid-column: span 2;
-    grid-row: span 2;
+  img {
+    min-height: 177px;
   }
 `
 
 export const SingleColumn = styled.div`
+  min-width: 190px;
+  min-height: 760px;
   display: grid;
+  gap: 14px;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, 1fr);
-  width: 9%;
-  height: 100%;
-  border: 1px solid green;
 `
 
-export const DoubleColumn = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  width: 19%;
-  height: 100%;
-  border: 1px solid red;
+export const FirstColumn = styled(DoubleColumn)`
+  grid-template-areas:
+    'f1 f1'
+    'f1 f1'
+    'f2 f3'
+    'f2 f4';
+`
+
+export const SecondColumn = styled(DoubleColumn)`
+  grid-template-areas:
+    'f1 f1'
+    'f2 f2'
+    'f3 f3'
+    'f3 f3';
+`
+
+export const ThirdColumn = styled(SingleColumn)`
+  grid-template-areas:
+    'f1'
+    'f2'
+    'f2'
+    'f3';
+`
+
+export const FourthColumn = styled(DoubleColumn)`
+  grid-template-areas:
+    'f1 f2'
+    'f1 f3'
+    'f4 f4'
+    'f4 f4';
+`
+
+export const FifthColumn = styled(DoubleColumn)`
+  grid-template-areas:
+    'f1 f1'
+    'f2 f2'
+    'f3 f3'
+    'f3 f3';
+`
+
+export const SixthColumn = styled(SingleColumn)`
+  grid-template-areas:
+    'f1'
+    'f2'
+    'f2'
+    'f3';
 `
