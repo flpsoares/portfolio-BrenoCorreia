@@ -13,6 +13,34 @@ export default createGlobalStyle`
   body {
     background: var(--dark);
   }
+  
+  html {
+    font-size: 62.5%;
+  }
+
+  @media (max-width: 1420px) {
+    html {
+      font-size: 50%;
+    }
+  }
+
+  @media (max-width: 1280px) {
+    html {
+      font-size: 40%;
+    }
+  }
+
+  @media (max-width: 1165px) {
+    html {
+      font-size: 30%;
+    }
+  }
+
+  @media (max-width: 1050px) {
+    html {
+      font-size: 20%;
+    }
+  }
 
   a {
     color: #FFFFFF;

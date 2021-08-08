@@ -1,5 +1,5 @@
 import { Header } from '../Header'
-import { Background, Container, Content, ContentWrapper } from './style'
+import { Background, Container, Content } from './style'
 
 import { BiPlayCircle } from 'react-icons/bi'
 export const Banner: React.FC = () => {
@@ -9,14 +9,12 @@ export const Banner: React.FC = () => {
       <Header />
       <Content>
         <img src="/assets/quadro.png" alt="quadro" />
-        <ContentWrapper>
-          <h1>Breno Correia</h1>
-          <h2>Meio-campo armador, 17 anos</h2>
-          <button>
-            <BiPlayCircle className="icon" size={32} />
-            Assistir highlights
-          </button>
-        </ContentWrapper>
+        <h1>Breno Correia</h1>
+        <h2>Meio-campo armador, 17 anos</h2>
+        <button>
+          <BiPlayCircle className="icon" size="3.2rem" />
+          Assistir highlights
+        </button>
       </Content>
     </Container>
   )

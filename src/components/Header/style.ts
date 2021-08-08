@@ -3,21 +3,21 @@ import styled from 'styled-components'
 export const Container = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 
   width: 100%;
+  max-width: 1050px;
 
   padding: 26px 0;
 
   img {
     width: 71px;
     height: 52px;
-    @media screen and (max-width: 670px) {
+    @media screen and (max-width: 1090px) {
       margin-bottom: 20px;
     }
   }
-
-  @media screen and (max-width: 670px) {
+  @media screen and (max-width: 1090px) {
     flex-direction: column;
   }
 `
@@ -26,11 +26,14 @@ export const Menu = styled.nav`
   ul {
     display: flex;
     gap: 50px;
-    margin-right: 130px;
     font-size: 12px;
 
     @media screen and (max-width: 670px) {
       margin-right: 0px;
+    }
+
+    @media screen and (max-width: 360px) {
+      gap: 30px;
     }
   }
 `
