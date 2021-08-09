@@ -56,8 +56,6 @@ export const IndividualAwardsWrapper = styled.div`
 
   min-width: 640px;
 
-  border: 1px solid red;
-
   @media (max-width: 1460px) {
     min-width: 580px;
   }
@@ -141,6 +139,7 @@ export const PlayerNumbers = styled.div`
   @media (max-width: 970px) {
     clip-path: none;
     width: 100%;
+    margin-top: -34px;
   }
 
   @media (max-width: 350px) {
