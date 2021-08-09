@@ -106,17 +106,6 @@ export const Content = styled.div`
     html {
       font-size: 50%;
     }
-    /* h1 {
-      font-size: 60px;
-    }
-
-    h2 {
-      font-size: 22px;
-    }
-
-    img {
-      height: 310px;
-    } */
   }
 
   @media (max-width: 1050px) {
