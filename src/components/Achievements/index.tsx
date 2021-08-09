@@ -11,12 +11,17 @@ import {
 import Carousel from 'react-elastic-carousel'
 
 export const Achievements: React.FC = () => {
+  const breakPoints = [
+    { width: 1700, itemsToShow: 3 },
+    { width: 410, itemsToShow: 2 }
+  ]
+
   return (
     <Container>
       <IndividualAwards>
         <IndividualAwardsWrapper>
           <h1>PRÊMIOS INDIVIDUAIS (18)</h1>
-          <Carousel itemsToShow={3} isRTL={false}>
+          <Carousel breakPoints={breakPoints} itemsToShow={3} isRTL={false}>
             <Award>
               <img src="/assets/chuteira.png" alt="chuteira" />
               <AwardTitle>

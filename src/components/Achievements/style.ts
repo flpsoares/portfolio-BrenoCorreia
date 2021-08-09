@@ -2,14 +2,23 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   width: 100%;
-  height: 416px;
+  max-height: 416px;
   background: #ffffff;
 
   display: grid;
   grid-template-columns: 44% 56%;
+
+  margin-top: 50px;
+  margin-bottom: 400px;
+
+  @media (max-width: 970px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `
 export const IndividualAwards = styled.div`
-  padding: 50px 0 50px 50px;
+  padding: 50px 0;
 
   display: flex;
   justify-content: flex-end;
@@ -21,13 +30,45 @@ export const IndividualAwards = styled.div`
     color: #c1c1c1;
     text-align: start;
     padding: 0 50px;
+
+    width: 460px;
+
+    @media (max-width: 1440px) {
+      width: 450px;
+    }
+
+    @media (max-width: 1320px) {
+      width: 370px;
+    }
+
+    @media (max-width: 970px) {
+      width: 350px;
+    }
+
+    @media (max-width: 370px) {
+      margin-left: 30px;
+    }
   }
 `
 
 export const IndividualAwardsWrapper = styled.div`
   position: relative;
 
-  width: 640px;
+  min-width: 640px;
+
+  border: 1px solid red;
+
+  @media (max-width: 1460px) {
+    min-width: 580px;
+  }
+
+  @media (max-width: 1225px) {
+    min-width: 500px;
+  }
+
+  @media (max-width: 1052px) {
+    min-width: 460px;
+  }
 `
 
 export const Award = styled.div`
@@ -68,10 +109,45 @@ export const PlayerNumbers = styled.div`
   clip-path: polygon(25% 0, 100% 0, 100% 100%, 0% 100%);
   padding: 50px;
 
+  max-height: 416px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
+
   gap: 40px;
+
+  h1 {
+    font-size: 32px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  @media (max-width: 1300px) {
+    justify-content: center;
+    padding: 50px 0px;
+
+    h1 {
+      font-size: 26px;
+    }
+
+    p {
+      font-size: 12px;
+    }
+  }
+
+  @media (max-width: 970px) {
+    clip-path: none;
+    width: 100%;
+  }
+
+  @media (max-width: 350px) {
+    h1 {
+      font-size: 22px;
+    }
+  }
 `
 
 export const PlayerNumbersWrapper = styled.div`
@@ -87,5 +163,13 @@ export const PlayerNumbersWrapper = styled.div`
 
   p {
     font-weight: 500;
+  }
+
+  @media (max-width: 410px) {
+    column-gap: 10px;
+
+    h1 {
+      font-size: 20px;
+    }
   }
 `
