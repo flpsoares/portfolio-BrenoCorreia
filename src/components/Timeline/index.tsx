@@ -8,7 +8,8 @@ import {
   InfosWrapper,
   Photos,
   Wrapper,
-  Description
+  Description,
+  Background
 } from './style'
 import { YearButton } from '../YearButton'
 
@@ -20,6 +21,7 @@ export const Timeline: React.FC = () => {
 
   return (
     <Container>
+      <Background />
       <Dates>
         {dates?.map((data) => {
           return (
