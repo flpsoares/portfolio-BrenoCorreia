@@ -28,6 +28,22 @@ export const Wrapper = styled.div`
     height: 100%;
     object-fit: cover;
   }
+
+  ::-webkit-scrollbar {
+    height: 16px;
+  }
+  ::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 10px;
+    &:hover {
+      background: rgba(244, 112, 76, 0.7);
+    }
+  }
 `
 
 export const DoubleColumn = styled.div`
