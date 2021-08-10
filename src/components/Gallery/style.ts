@@ -19,6 +19,7 @@ export const Wrapper = styled.div`
   gap: 20px;
 
   padding: 0 58px;
+  padding-bottom: 20px;
 
   margin-bottom: 58px;
   overflow-x: scroll;
