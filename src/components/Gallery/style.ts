@@ -30,6 +30,10 @@ export const Wrapper = styled.div`
     object-fit: cover;
   }
 
+  @media (max-width: 380px) {
+    padding: 12px;
+  }
+
   ::-webkit-scrollbar {
     height: 16px;
   }
@@ -59,6 +63,18 @@ export const DoubleColumn = styled.div`
   img {
     min-height: 177px;
   }
+
+  @media (max-width: 1600px) {
+    max-height: 730px;
+  }
+
+  @media (max-width: 1550px) {
+    max-height: 620px;
+  }
+
+  @media (max-width: 440px) {
+    min-width: 300px;
+  }
 `
 
 export const SingleColumn = styled.div`
@@ -68,6 +84,14 @@ export const SingleColumn = styled.div`
   gap: 14px;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, 1fr);
+
+  @media (max-width: 1600px) {
+    min-height: 730px;
+  }
+
+  @media (max-width: 1550px) {
+    min-height: 620px;
+  }
 `
 
 export const FirstColumn = styled(DoubleColumn)`
