@@ -87,10 +87,26 @@ export default createGlobalStyle`
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: 970px) {
+      right: 20px;
+    }
+
+    @media (max-width: 400px) {
+      right: 80px;
+    }
   }
 
   .rec.rec-arrow-left {
     right: 120px;
+
+    @media (max-width: 970px) {
+      right: 80px;
+    }
+
+    @media (max-width: 400px) {
+      right: 140px;
+    }
   }
 
   .rec.rec-arrow:hover, .rec.rec-arrow-left:hover {

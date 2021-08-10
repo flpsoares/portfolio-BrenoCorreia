@@ -9,12 +9,12 @@ export const Container = styled.div`
   grid-template-columns: 44% 56%;
 
   margin-top: 50px;
-  margin-bottom: 400px;
 
   @media (max-width: 970px) {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 340px;
   }
 `
 export const IndividualAwards = styled.div`
@@ -37,16 +37,23 @@ export const IndividualAwards = styled.div`
       width: 450px;
     }
 
-    @media (max-width: 1320px) {
+    @media (max-width: 1345px) {
       width: 370px;
     }
 
     @media (max-width: 970px) {
-      width: 350px;
+      width: 280px;
+      font-size: 20px;
+      padding: 6px 0 0 0;
     }
 
-    @media (max-width: 370px) {
+    @media (max-width: 435px) {
       margin-left: 30px;
+    }
+
+    @media (max-width: 400px) {
+      width: 230px;
+      margin-left: 80px;
     }
   }
 `
@@ -56,16 +63,20 @@ export const IndividualAwardsWrapper = styled.div`
 
   min-width: 640px;
 
-  @media (max-width: 1460px) {
-    min-width: 580px;
-  }
-
-  @media (max-width: 1225px) {
+  @media (max-width: 1345px) {
     min-width: 500px;
   }
 
   @media (max-width: 1052px) {
     min-width: 460px;
+  }
+
+  @media (max-width: 550px) {
+    min-width: 440px;
+  }
+
+  @media (max-width: 380px) {
+    min-width: 380px;
   }
 `
 
@@ -87,6 +98,13 @@ export const Award = styled.div`
     width: 131px;
     height: 148px;
   }
+
+  @media (max-width: 410px) {
+    img {
+      width: 111px;
+      height: 128px;
+    }
+  }
 `
 
 export const AwardTitle = styled.div`
@@ -99,6 +117,12 @@ export const AwardTitle = styled.div`
     font-size: 14px;
     color: #555555;
     text-align: center;
+  }
+
+  @media (max-width: 380px) {
+    span {
+      font-size: 10px;
+    }
   }
 `
 
@@ -139,7 +163,7 @@ export const PlayerNumbers = styled.div`
   @media (max-width: 970px) {
     clip-path: none;
     width: 100%;
-    margin-top: -34px;
+    margin-top: -6px;
   }
 
   @media (max-width: 350px) {
