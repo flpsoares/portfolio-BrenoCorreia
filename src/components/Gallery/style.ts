@@ -11,6 +11,10 @@ export const Container = styled.div`
     color: #a0a0a0;
     text-align: center;
     padding: 58px 0;
+
+    @media (max-width: 440px) {
+      font-size: 55px;
+    }
   }
 `
 
