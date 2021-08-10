@@ -19,7 +19,7 @@ export const Gallery: React.FC = () => {
   const { imageModalIsOpen } = useContext(ModalContext)
 
   return (
-    <Container>
+    <Container className="gallery">
       <h1>GALERIA DE FOTOS</h1>
       <Wrapper>
         {imageModalIsOpen && <ImageModal />}

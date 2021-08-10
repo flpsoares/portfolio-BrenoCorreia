@@ -1,5 +1,7 @@
 import { Container, Item, Menu } from './style'
 
+import { Link } from 'react-scroll'
+
 export const Header: React.FC = () => {
   return (
     <Container>
@@ -7,16 +9,51 @@ export const Header: React.FC = () => {
       <Menu>
         <ul>
           <Item>
-            <a href="#">HISTÓRIA</a>
+            <Link
+              activeClass="active"
+              to="history"
+              spy={true}
+              smooth={true}
+              duration={500}
+            >
+              HISTÓRIA
+            </Link>
           </Item>
           <Item>
-            <a href="#">TÍTULOS</a>
+            <Link
+              activeClass="active"
+              to="titles"
+              spy={true}
+              smooth={true}
+              offset={-40}
+              duration={500}
+            >
+              TÍTULOS
+            </Link>
           </Item>
           <Item>
-            <a href="#">GALERIA</a>
+            <Link
+              activeClass="active"
+              to="gallery"
+              spy={true}
+              smooth={true}
+              offset={180}
+              duration={500}
+            >
+              GALERIA
+            </Link>
           </Item>
           <Item>
-            <a href="#">CONTATO</a>
+            <Link
+              activeClass="active"
+              to="contact"
+              spy={true}
+              smooth={true}
+              // offset={-80}
+              duration={500}
+            >
+              CONTATO
+            </Link>
           </Item>
         </ul>
       </Menu>

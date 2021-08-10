@@ -44,6 +44,7 @@ export const Item = styled.li`
     font-weight: 600;
 
     transition: color 0.2s;
+    cursor: pointer;
 
     &:hover {
       color: var(--primary);

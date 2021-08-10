@@ -6,7 +6,7 @@ import { DefendedTeams } from '../DefendedTeams'
 
 export const Biography: React.FC = () => {
   return (
-    <Container>
+    <Container className="history">
       <KnowMoreButton>
         <MdKeyboardArrowDown className="icon" size={26} />
         conheça mais

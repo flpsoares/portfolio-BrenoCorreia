@@ -20,7 +20,7 @@ export const Timeline: React.FC = () => {
   const { dates } = useContext(DatesContext)
 
   return (
-    <Container>
+    <Container className="titles">
       <Background />
       <Dates>
         {dates?.map((data) => {
