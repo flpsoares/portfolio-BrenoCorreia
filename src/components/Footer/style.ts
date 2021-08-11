@@ -10,12 +10,18 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
 
-  padding: 32px;
+  padding: 32px 200px;
 
-  .logo {
-    width: 71px;
-    height: 52px;
-    margin-right: 58px;
+  @media (max-width: 875px) {
+    padding: 32px 60px;
+  }
+
+  @media (max-width: 540px) {
+    padding: 32px 8px;
+  }
+
+  @media (max-width: 440px) {
+    height: 240px;
   }
 `
 
@@ -24,7 +30,17 @@ export const Wrapper = styled.div`
   align-items: center;
   justify-content: space-between;
 
-  width: 1000px;
+  width: 100%;
+
+  .logo {
+    width: 71px;
+    height: 52px;
+  }
+
+  @media (max-width: 440px) {
+    flex-direction: column;
+    gap: 32px;
+  }
 `
 
 export const Advice = styled.div`
@@ -42,35 +58,11 @@ export const Advice = styled.div`
     font-size: 14px;
     font-weight: 700;
   }
-`
 
-export const Sponsorship = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-
-  p {
-    font-size: 14px;
-    font-weight: 700;
-    color: #555555;
-  }
-
-  div {
-    display: flex;
-    gap: 28px;
-  }
-
-  .nike {
-    width: 63px;
-    height: 33px;
-  }
-
-  .sportsbet {
-    width: 133px;
-    height: 27px;
+  @media (max-width: 440px) {
+    text-align: center;
   }
 `
-
 export const Social = styled.div`
   display: flex;
   justify-content: space-between;
