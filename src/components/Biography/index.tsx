@@ -26,9 +26,10 @@ export const Biography: React.FC = () => {
         <Info>
           <h1>BIOGRAFIA</h1>
           <span>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
-            bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
-            justo
+            Com seus primeiros passos na base do São Paulo FC onde chegou com 10 anos
+            e ficou até os 15 ganhando títulos pelo clube tanto no campo quanto no
+            futsal, posteriormente profissionalizado pelo Nacional AC e emprestado ao
+            Vasco da Gama onde se sagrou campeão carioca e campeão da copa do Brasil.
           </span>
         </Info>
       </Wrapper>
