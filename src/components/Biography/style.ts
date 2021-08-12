@@ -48,6 +48,8 @@ export const Container = styled.div`
     top: -120px;
     right: 0;
 
+    z-index: -1;
+
     @media (max-width: 1400px) {
       width: 500px;
     }
