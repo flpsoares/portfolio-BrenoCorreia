@@ -44,9 +44,12 @@ export const Background = styled.div`
 export const Dates = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 120px;
 
   margin-top: 80px;
+
+  min-width: 80%;
 `
 
 export const Wrapper = styled.div`
@@ -165,21 +168,19 @@ export const AwardsWrapper = styled.div`
 
   margin-top: 24px;
 
-  p {
-    color: var(--primary);
-    font-weight: 500;
-    font-size: 20px;
-  }
-
   div {
     display: flex;
     gap: 14px;
   }
+`
+
+export const AwardWrapperTitle = styled.p`
+  color: var(--primary);
+  font-weight: 500;
+  font-size: 20px;
 
   @media (max-width: 540px) {
-    p {
-      font-size: 16px;
-    }
+    font-size: 16px;
   }
 `
 
@@ -189,19 +190,31 @@ export const Award = styled.div`
   background-color: var(--primary);
   border-radius: 8px;
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 16px;
+  text-align: center;
+
   @media (max-width: 1620px) {
     width: 110px;
-  }
-
-  @media (max-width: 540px) {
-    width: 90px;
-    height: 130px;
   }
 
   @media (max-width: 540px) {
     width: 70px;
     height: 110px;
   }
+`
+
+export const AwardTitle = styled.p`
+  font-weight: 500;
+  font-size: 14px;
+  color: red;
+`
+export const AwardSubTitle = styled.p`
+  font-weight: 200;
+  font-size: 10px;
 `
 
 export const Description = styled.div`

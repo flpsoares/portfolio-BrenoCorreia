@@ -9,12 +9,18 @@ import {
   Photos,
   Wrapper,
   Description,
-  Background
+  Background,
+  AwardWrapperTitle,
+  AwardTitle,
+  AwardSubTitle
 } from './style'
 import { YearButton } from '../YearButton'
 
 import { useContext } from 'react'
 import { DatesContext } from '../../contexts/DatesContext'
+
+import { BiTrophy } from 'react-icons/bi'
+import { RiMedal2Line } from 'react-icons/ri'
 
 export const Timeline: React.FC = () => {
   const { dates } = useContext(DatesContext)
@@ -47,18 +53,34 @@ export const Timeline: React.FC = () => {
           </h1>
           <InfosWrapper>
             <AwardsWrapper>
-              <p>Títulos</p>
+              <AwardWrapperTitle>Títulos</AwardWrapperTitle>
               <div>
-                <Award></Award>
-                <Award></Award>
+                <Award>
+                  <BiTrophy size={56} />
+                  <AwardTitle>Paulista</AwardTitle>
+                  <AwardSubTitle>sub 17</AwardSubTitle>
+                </Award>
+                <Award>
+                  <BiTrophy size={56} />
+                  <AwardTitle>Brasileiro</AwardTitle>
+                  <AwardSubTitle>sub 17</AwardSubTitle>
+                </Award>
               </div>
             </AwardsWrapper>
 
             <AwardsWrapper>
-              <p>Prêmios</p>
+              <AwardWrapperTitle>Prêmios</AwardWrapperTitle>
               <div>
-                <Award></Award>
-                <Award></Award>
+                <Award>
+                  <RiMedal2Line size={56} />
+                  <p>Artilheiro Paulistão</p>
+                  <p>sub 17</p>
+                </Award>
+                <Award>
+                  <RiMedal2Line size={56} />
+                  <p>Artilheiro Brasileiro</p>
+                  <p>sub 17</p>
+                </Award>
               </div>
             </AwardsWrapper>
           </InfosWrapper>
