@@ -1,15 +1,25 @@
-import { Container, Info, KnowMoreButton, Wrapper } from './style'
+import { Container, Info, Wrapper, KnowMoreButton } from './style'
 
 import { MdKeyboardArrowDown } from 'react-icons/md'
 import { Timeline } from '../Timeline'
 import { DefendedTeams } from '../DefendedTeams'
 
+import { Link } from 'react-scroll'
+
 export const Biography: React.FC = () => {
   return (
     <Container className="history">
       <KnowMoreButton>
-        <MdKeyboardArrowDown className="icon" size={26} />
-        conheça mais
+        <Link
+          activeClass="active"
+          to="history"
+          spy={true}
+          smooth={true}
+          duration={500}
+        >
+          <MdKeyboardArrowDown className="icon" size={26} />
+          conheça mais
+        </Link>
       </KnowMoreButton>
       <img className="bola" src="/assets/bola.gif" alt="bola" />
       <Wrapper>

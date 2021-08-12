@@ -1,11 +1,46 @@
 import styled, { keyframes } from 'styled-components'
 
+const bouncing = keyframes`
+  0% {
+    transform: translateY(-2px);
+  }
+
+  50% {
+    transform: translateY(2px);
+  }
+ 
+  100% {
+    transform: translateY(-2px);
+  }
+`
+
 export const Container = styled.div`
   position: relative;
 
   overflow: hidden;
 
   box-shadow: 0px -25px 50px 16px var(--dark);
+
+  a:nth-child(1) {
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    color: #a0a0a0;
+    font-weight: 500;
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition: transform 0.05s;
+    animation: ${bouncing} 1s;
+
+    animation-iteration-count: infinite;
+
+    .icon {
+      fill: #a0a0a0;
+    }
+  }
 
   .bola {
     position: absolute;
@@ -31,6 +66,11 @@ export const Container = styled.div`
   }
 `
 
+export const KnowMoreButton = styled.div`
+  display: flex;
+  justify-content: center;
+`
+
 export const Wrapper = styled.div`
   padding: 100px 320px;
 
@@ -48,35 +88,6 @@ export const Wrapper = styled.div`
 
   @media (max-width: 350px) {
     padding: 100px 120px;
-  }
-`
-
-const bouncing = keyframes`
-  from {
-    transform: translateY(-2px);
-  }
- 
-  to {
-    transform: translateY(2px);
-  }
-`
-
-export const KnowMoreButton = styled.button`
-  margin: auto;
-
-  display: flex;
-  align-items: center;
-  color: #a0a0a0;
-  font-weight: 500;
-  font-size: 14px;
-
-  transition: transform 0.1s;
-  animation: ${bouncing} 1s;
-
-  animation-iteration-count: infinite;
-
-  .icon {
-    fill: #a0a0a0;
   }
 `
 
