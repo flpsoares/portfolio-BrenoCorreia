@@ -16,6 +16,55 @@ export const Container = styled.div`
     align-items: center;
     margin-bottom: 340px;
   }
+
+  .rec-dot {
+    display: none;
+  }
+
+  .rec.rec-arrow {
+    background: #333333 !important;
+
+    position: absolute;
+    top: 10px;
+    right: 60px;
+
+    width: 23px;
+    height: 19px;
+
+    border-radius: 0;
+
+    font-size: 18px;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 970px) {
+      right: 20px;
+    }
+
+    @media (max-width: 400px) {
+      right: 80px;
+    }
+  }
+
+  .rec.rec-arrow-left {
+    right: 120px;
+
+    @media (max-width: 970px) {
+      right: 80px;
+    }
+
+    @media (max-width: 400px) {
+      right: 140px;
+    }
+  }
+
+  .rec.rec-arrow:hover,
+  .rec.rec-arrow-left:hover {
+    filter: brightness(0.8);
+  }
 `
 export const IndividualAwards = styled.div`
   padding: 50px 0;
