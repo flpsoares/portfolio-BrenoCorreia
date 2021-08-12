@@ -5,7 +5,7 @@ import { ImFacebook } from 'react-icons/im'
 
 export const Footer: React.FC = () => {
   return (
-    <Container>
+    <Container className="contact">
       <Wrapper>
         <img className="logo" src="/assets/logo.png" alt="logo" />
         <Advice>

@@ -49,7 +49,6 @@ export const Header: React.FC = () => {
               to="contact"
               spy={true}
               smooth={true}
-              // offset={-80}
               duration={500}
             >
               CONTATO
