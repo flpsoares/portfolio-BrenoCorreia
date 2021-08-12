@@ -12,8 +12,8 @@ export const YearButton: React.FC<App.Date> = ({ id, date, team, isActive }) => 
 
   return (
     <Container onClick={handleClick} isActive={isActive}>
-      {date}
       {isActive && <Highlighter team={team} />}
+      <h1>{date}</h1>
     </Container>
   )
 }

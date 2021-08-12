@@ -7,6 +7,36 @@ export const Container = styled.div`
 
   position: relative;
 
+  .rec-dot {
+    background-color: 0 !important;
+    opacity: 50% !important;
+    border-width: 0 !important;
+    outline: 0 !important;
+  }
+  .rec-dot_active {
+    background-color: 0 !important;
+    opacity: 100% !important;
+    outline: 0 !important;
+    border-width: 0 !important;
+  }
+  .rec.rec-arrow {
+    background: 0 !important;
+    font-size: 30px;
+    color: #a0a0a0;
+    border-width: 0 !important;
+    outline: 0 !important;
+  }
+  .rec-item-wrapper {
+    height: 100%;
+  }
+  .rec.rec-arrow:hover {
+    background: 0 !important;
+    color: white !important;
+  }
+  .rec.rec-arrow:disabled {
+    display: none;
+  }
+
   @media (max-width: 1040px) {
     margin-bottom: 100px;
   }
@@ -46,8 +76,6 @@ export const Dates = styled.div`
   justify-content: center;
   align-items: center;
   gap: 120px;
-
-  margin-top: 80px;
 
   min-width: 80%;
 `
@@ -98,6 +126,20 @@ export const Photos = styled.div`
     img {
       width: 180px;
       height: 420px;
+    }
+  }
+
+  @media (max-width: 590px) {
+    img {
+      width: 120px;
+      height: 260px;
+    }
+  }
+
+  @media (max-width: 450px) {
+    img {
+      width: 90px;
+      height: 200px;
     }
   }
 `
@@ -209,12 +251,19 @@ export const Award = styled.div`
 
 export const AwardTitle = styled.p`
   font-weight: 500;
-  font-size: 14px;
-  color: red;
+  font-size: 18px;
+
+  @media (max-width: 540px) {
+    font-size: 12px;
+  }
 `
 export const AwardSubTitle = styled.p`
   font-weight: 200;
-  font-size: 10px;
+  font-size: 14px;
+
+  @media (max-width: 540px) {
+    font-size: 11px;
+  }
 `
 
 export const Description = styled.div`
