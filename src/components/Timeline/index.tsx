@@ -16,7 +16,7 @@ import {
 } from './style'
 import { YearButton } from '../YearButton'
 
-import { useContext } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import { DatesContext } from '../../contexts/DatesContext'
 
 import { BiTrophy } from 'react-icons/bi'
@@ -36,6 +36,16 @@ export const Timeline: React.FC = () => {
     { width: 652, itemsToShow: 5 },
     { width: 759, itemsToShow: 6 }
   ]
+
+  const [date, setDate] = useState<App.Date>()
+
+  useEffect(() => {
+    dates?.forEach((date) => {
+      if (date.isActive === true) {
+        setDate(date)
+      }
+    })
+  }, [dates])
 
   return (
     <Container className="titles">
@@ -63,13 +73,13 @@ export const Timeline: React.FC = () => {
       </Dates>
       <Wrapper>
         <Photos>
-          <img src="/assets/galery/foto20.jpg" />
-          <img src="/assets/galery/foto3.jpg" />
-          <img src="/assets/galery/foto17.jpg" />
+          <img src={date?.imagem1} />
+          <img src={date?.imagem2} />
+          <img src={date?.imagem3} />
         </Photos>
         <Infos>
           <h1>
-            <Quote>“</Quote> MEU MELHOR MOMENTO NA CARREIRA. <Quote>“</Quote>
+            <Quote>“ </Quote> {date?.title} <Quote> “</Quote>
           </h1>
           <InfosWrapper>
             <AwardsWrapper>
@@ -77,13 +87,13 @@ export const Timeline: React.FC = () => {
               <div>
                 <Award>
                   <BiTrophy size={56} />
-                  <AwardTitle>Paulista</AwardTitle>
-                  <AwardSubTitle>sub 17</AwardSubTitle>
+                  <AwardTitle>{date?.title1}</AwardTitle>
+                  <AwardSubTitle>{date?.subTitle1}</AwardSubTitle>
                 </Award>
                 <Award>
                   <BiTrophy size={56} />
-                  <AwardTitle>Brasileiro</AwardTitle>
-                  <AwardSubTitle>sub 17</AwardSubTitle>
+                  <AwardTitle>{date?.title2}</AwardTitle>
+                  <AwardSubTitle>{date?.subTitle2}</AwardSubTitle>
                 </Award>
               </div>
             </AwardsWrapper>
@@ -93,24 +103,20 @@ export const Timeline: React.FC = () => {
               <div>
                 <Award>
                   <RiMedal2Line size={56} />
-                  <AwardTitle>Artilheiro Paulistão</AwardTitle>
-                  <AwardSubTitle>sub 17</AwardSubTitle>
+                  <AwardTitle>{date?.award1}</AwardTitle>
+                  <AwardSubTitle>{date?.subAward1}</AwardSubTitle>
                 </Award>
                 <Award>
                   <RiMedal2Line size={56} />
-                  <AwardTitle>Artilheiro Brasileiro</AwardTitle>
-                  <AwardSubTitle>sub 17</AwardSubTitle>
+                  <AwardTitle>{date?.award2}</AwardTitle>
+                  <AwardSubTitle>{date?.subAward2}</AwardSubTitle>
                 </Award>
               </div>
             </AwardsWrapper>
           </InfosWrapper>
           <Description>
             <p>Descritivo</p>
-            <span>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
-              bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et
-              viverra justo commod oin sodales pulvinar tempor.
-            </span>
+            <span>{date?.description}</span>
           </Description>
         </Infos>
       </Wrapper>
