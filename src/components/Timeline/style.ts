@@ -48,10 +48,6 @@ export const Container = styled.div`
   @media (max-width: 720px) {
     margin-bottom: 180px;
   }
-
-  @media (max-width: 580px) {
-    margin-bottom: 260px;
-  }
 `
 
 export const Background = styled.div`
