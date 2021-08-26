@@ -1,8 +1,8 @@
-import styled, { createGlobalStyle } from 'styled-components'
+import styled from 'styled-components'
 
 export const Container = styled.div`
   width: 100%;
-  max-height: 90vh;
+  height: 100vh;
 
   display: flex;
   flex-direction: column;
@@ -90,7 +90,7 @@ export const Content = styled.div`
 
     @media (max-width: 1050px) {
       margin-top: 10px;
-      font-size: 10px;
+      font-size: 12px;
     }
 
     .icon {
@@ -102,12 +102,6 @@ export const Content = styled.div`
     }
   }
 
-  @media screen and (max-width: 1280px) {
-    html {
-      font-size: 50%;
-    }
-  }
-
   @media (max-width: 1050px) {
     img {
       height: 120%;
@@ -116,6 +110,7 @@ export const Content = styled.div`
     margin-left: 130px;
     width: 250px;
     padding-left: 20px;
+    margin-top: 120px;
   }
 
   @media screen and (max-width: 380px) {
