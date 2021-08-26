@@ -7,27 +7,27 @@ export const DefendedTeams: React.FC = () => {
       <Wrapper>
         <Team>
           <div>
+            <img src="/assets/teams/nacional.png" alt="nacional" />
+          </div>
+          <p>atual</p>
+        </Team>
+        <Team>
+          <div>
             <img src="/assets/teams/vasco.png" alt="vasco" />
           </div>
-          <p>2018 - 2021</p>
+          <p>2021 - 2019</p>
         </Team>
         <Team>
           <div>
-            <img src="/assets/teams/palmeiras.png" alt="palmeiras" />
+            <img src="/assets/teams/nacional.png" alt="nacional" />
           </div>
-          <p>2017</p>
+          <p>2019</p>
         </Team>
         <Team>
           <div>
-            <img src="/assets/teams/escudos.png" alt="escudos" />
+            <img src="/assets/teams/sao_paulo.png" alt="sao_paulo" />
           </div>
-          <p>2016 - 2013</p>
-        </Team>
-        <Team>
-          <div>
-            <img src="/assets/teams/galaxy.png" alt="galaxy" />
-          </div>
-          <p>2013 - 2009</p>
+          <p>2017 - 2012</p>
         </Team>
       </Wrapper>
     </Container>
