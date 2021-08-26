@@ -9,6 +9,8 @@ export const Container = styled.div`
 
   right: 20px;
   bottom: 20px;
+
+  z-index: 10;
 `
 
 export const Link = styled.a`
