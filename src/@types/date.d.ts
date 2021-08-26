@@ -4,7 +4,7 @@ declare namespace App {
     date?: number
     team?: string
     isActive?: boolean
-    title?: string
+    phrase?: string
     title1?: string
     title2?: string
     subTitle1?: string

@@ -79,7 +79,7 @@ export const Timeline: React.FC = () => {
         </Photos>
         <Infos>
           <h1>
-            <Quote>“ </Quote> {date?.title} <Quote> “</Quote>
+            <Quote>“ </Quote> {date?.phrase} <Quote> “</Quote>
           </h1>
           <InfosWrapper>
             <AwardsWrapper>
