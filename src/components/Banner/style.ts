@@ -43,8 +43,7 @@ export const Content = styled.div`
   flex-direction: column;
   justify-content: center;
 
-  width: 100%;
-  max-width: 1050px;
+  width: 1150px;
 
   position: relative;
 
@@ -90,7 +89,10 @@ export const Content = styled.div`
 
     @media (max-width: 1050px) {
       margin-top: 10px;
-      font-size: 12px;
+    }
+
+    @media (max-width: 630px) {
+      font-size: 16px;
     }
 
     .icon {
@@ -102,20 +104,50 @@ export const Content = styled.div`
     }
   }
 
-  @media (max-width: 1050px) {
-    img {
-      height: 120%;
-    }
-
-    margin-left: 130px;
-    width: 250px;
-    padding-left: 20px;
-    margin-top: 120px;
+  @media (max-width: 1350px) {
+    width: 800px;
   }
 
-  @media screen and (max-width: 380px) {
+  @media (max-width: 1000px) {
+    width: 600px;
+
     h1 {
-      font-size: 26px;
+      font-size: 7rem;
+    }
+
+    h2 {
+      font-size: 2.8rem;
+    }
+  }
+
+  @media (max-width: 630px) {
+    left: 200px;
+    padding-left: 24px;
+
+    h1 {
+      font-size: 4rem;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+    }
+
+    img {
+      height: 70%;
+    }
+  }
+
+  @media (max-width: 440px) {
+    h1 {
+      font-size: 3.3rem;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+    }
+
+    img {
+      height: 60%;
     }
   }
 `

@@ -6,18 +6,27 @@ export const Container = styled.div`
   justify-content: space-between;
 
   width: 100%;
-  max-width: 1050px;
+  width: 1150px;
 
   padding: 26px 0;
 
   img {
     width: 71px;
     height: 52px;
-    @media screen and (max-width: 1090px) {
+    @media (max-width: 1090px) {
       margin-bottom: 20px;
     }
   }
-  @media screen and (max-width: 1090px) {
+
+  @media (max-width: 1350px) {
+    width: 800px;
+  }
+
+  @media (max-width: 1000px) {
+    width: 600px;
+  }
+
+  @media (max-width: 660px) {
     flex-direction: column;
   }
 `
